@@ -10,3 +10,39 @@
 [15-Apr-2024 16:39:17 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
 [15-Apr-2024 16:39:19 UTC] PHP Notice: A feed could not be found at `https://wordpress.org/`; the status code is `400` and content-type is `text/plain` in /wordpress/wp-includes/class-simplepie.php on line 2
 [15-Apr-2024 17:02:55 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 18:56:51 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 18:56:53 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 18:57:03 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 18:57:36 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 18:57:43 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 18:57:54 UTC] PHP Fatal error:  Uncaught RuntimeException: GuzzleHttp requires cURL, the allow_url_fopen ini setting, or a custom HTTP handler. in /wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/functions.php:105
+Stack trace:
+#0 /wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/HandlerStack.php(39): Google\Site_Kit_Dependencies\GuzzleHttp\choose_handler()
+#1 /wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/Client.php(64): Google\Site_Kit_Dependencies\GuzzleHttp\HandlerStack::create()
+#2 /wordpress/wp-content/plugins/google-site-kit/third-party/google/apiclient/src/Client.php(972): Google\Site_Kit_Dependencies\GuzzleHttp\Client->__construct(Array)
+#3 /wordpress/wp-content/plugins/google-site-kit/third-party/google/apiclient/src/Client.php(936): Google\Site_Kit_Dependencies\Google\Client->createDefaultHttpClient()
+#4 /wordpress/wp-content/plugins/google-site-kit/includes/Core/Authentication/Clients/Client_Factory.php(63): Google\Site_Kit_Dependencies\Google\Client->getHttpClient()
+#5 /wordpress/wp-content/plugins/google-site-kit/includes/Core/Authentication/Clients/OAuth_Client_Base.php(162): Google\Site_Kit\Core\Authentication\Clients\Client_Factory::create_client(Array)
+#6 /wordpress/wp-content/plugins/google-site-kit/includes/Core/Util/Health_Checks.php(123): Google\Site_Kit\Core\Authentication\Clients\OAuth_Client_Base->get_client()
+#7 /wordpress/wp-content/plugins/google-site-kit/includes/Core/Util/Health_Checks.php(86): Google\Site_Kit\Core\Util\Health_Checks->check_google_api()
+#8 /wordpress/wp-includes/rest-api/class-wp-rest-server.php(3): Google\Site_Kit\Core\Util\Health_Checks->Google\Site_Kit\Core\Util\{closure}(Object(WP_REST_Request))
+#9 /wordpress/wp-includes/rest-api/class-wp-rest-server.php(3): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/google-site-ki...', Array, NULL)
+#10 /wordpress/wp-includes/rest-api/class-wp-rest-server.php(3): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#11 /wordpress/wp-includes/rest-api.php(2): WP_REST_Server->serve_request('/google-site-ki...')
+#12 /wordpress/wp-includes/class-wp-hook.php(3): rest_api_loaded(Object(WP))
+#13 /wordpress/wp-includes/class-wp-hook.php(3): WP_Hook->apply_filters('', Array)
+#14 /wordpress/wp-includes/plugin.php(2): WP_Hook->do_action(Array)
+#15 /wordpress/wp-includes/class-wp.php(3): do_action_ref_array('parse_request', Array)
+#16 /wordpress/wp-includes/class-wp.php(3): WP->parse_request('')
+#17 /wordpress/wp-includes/functions.php(2): WP->main('')
+#18 /wordpress/wp-blog-header.php(2): wp()
+#19 /wordpress/index.php(2): require('/wordpress/wp-b...')
+#20 {main}
+  thrown in /wordpress/wp-content/plugins/google-site-kit/third-party/guzzlehttp/guzzle/src/functions.php on line 105
+[15-Apr-2024 19:00:08 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 19:00:19 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 19:00:28 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 19:00:35 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 19:14:30 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 19:14:50 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
+[15-Apr-2024 22:42:40 UTC] PHP Deprecated:  Hook http_api_transports is deprecated since version 6.4.0 with no alternative available. in /wordpress/wp-includes/functions.php on line 135
